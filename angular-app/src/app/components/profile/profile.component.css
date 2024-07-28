@@ -1,0 +1,24 @@
+h2 {
+  margin-top: 20px;
+  margin-left: 70px;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+span {
+  width: 500px;
+}
+.detail {
+  text-align: start;
+}

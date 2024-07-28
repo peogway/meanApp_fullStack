@@ -1,0 +1,54 @@
+h2 {
+  margin-top: 20px;
+  font-size: 70px;
+  text-align: left;
+}
+
+.login {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  /* margin-right: 50px; */
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #7f9ebf;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: 0.5s ease-out;
+}
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.form-group label {
+  font-size: 22px;
+  width: 30%;
+  /* text-align: left; */
+  margin-right: 10px;
+}
+.submit-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  font-size: 25px;
+  width: fit-content;
+  margin: 0 auto;
+}

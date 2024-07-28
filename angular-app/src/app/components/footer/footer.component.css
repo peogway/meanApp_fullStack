@@ -1,0 +1,17 @@
+footer {
+  margin-top: 30px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7d77772f;
+  padding: 10px 10px;
+}
+
+a:hover {
+  color: blue;
+  display: inline-block;
+  transform: scale(1.2);
+  transition: 0.5s ease-out;
+}
