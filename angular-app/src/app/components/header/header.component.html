@@ -1,0 +1,10 @@
+<header>
+  <h1>{{ title }}</h1>
+  <app-button
+    id="add-btn"
+    *ngIf="isRoute('/dashboard')"
+    color="{{ showAddTask ? '#FF9999' : 'lightgreen' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</header>

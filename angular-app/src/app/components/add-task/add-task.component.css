@@ -1,0 +1,36 @@
+.add-form {
+  margin-bottom: 40px;
+}
+
+.add-form label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+.add-form input[type="text"] {
+  margin-left: 50px;
+  font-size: 20px;
+  min-width: 300px;
+}
+.add-form input[type="checkbox"] {
+  font-size: 20px;
+  margin-left: 16px; /* Adjust spacing between label and input */
+}
+
+.add-form .form-control {
+  margin-bottom: 20px; /* Increase vertical spacing between form elements */
+}
+
+.add-form .form-control-check {
+  display: flex;
+  align-items: center;
+}
+
+.add-form .btn {
+  color: antiquewhite;
+  background-color: #67398f; /* Set background color for the button */
+  border-radius: 20px; /* Add border radius */
+  margin: 0 auto; /* Center the button horizontally */
+  display: block; /* Ensure the button takes up full width */
+}
