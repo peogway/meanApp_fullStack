@@ -26,7 +26,7 @@ mongoose.connect(config.MONGODB_URI)
 
 const app = express();
 
-const port = 3000;
+const port = config.PORT;
 
 // CORS Middleware
 app.use(cors());
