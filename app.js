@@ -8,6 +8,7 @@ const morgan = require("morgan");
 const logger = require("./utils/logger");
 const middleware = require("./utils/middleware");
 const users = require("./routes/users");
+const dashboard = require("./routes/dashboard");
 const config = require("./utils/config");
 
 const session = require("express-session");
@@ -53,11 +54,9 @@ app.use(
   morgan(":method :url :status :res[content-length] - :response-time ms :body"),
 );
 
-app.use("/users", users);
 // Routes
-app.get("/", (request, response) => {
-  response.send("hello");
-});
+app.use("/users", users);
+app.use("/dashboard", dashboard);
 
 // Catch-all route to serve Angular index.html
 app.get("*", (req, res) => {
