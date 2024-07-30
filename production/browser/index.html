@@ -31,8 +31,9 @@
       window.addEventListener("resize", adjustFooterPosition);
 
       // Observe changes in the content
+      const targetNode = document.getElementById("container");
       const observer = new MutationObserver(adjustFooterPosition);
-      observer.observe(document.body, { childList: true, subtree: true });
+      observer.observe(targetNode, { childList: true, subtree: true });
 
       document.addEventListener("click", function (event) {
         const navbarToggler = document.querySelector(".navbar-toggler");
