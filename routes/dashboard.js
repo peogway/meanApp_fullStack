@@ -7,7 +7,7 @@ const config = require("../utils/config");
 // Authorization
 router.use((req, res, next) => {
   passport.authenticate("jwt", { session: false }, (err, user, info) => {
-    if (err || !user) {
+    if (err) {
       return res.redirect("/login");
     }
     req.user = user;
