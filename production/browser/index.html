@@ -12,5 +12,23 @@
   <link rel="stylesheet" href="styles-J4WDJVZL.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-J4WDJVZL.css"></noscript></head>
   <body>
     <app-root></app-root>
-  <script src="polyfills-SCHOHYNV.js" type="module"></script><script src="scripts-EEEIPNC3.js" defer></script><script src="main-OYKTPBAJ.js" type="module"></script></body>
+    <script>
+      document.addEventListener("click", function (event) {
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCollapse = document.querySelector("#navbarResponsive");
+
+        // Check if the clicked element is inside the navbar or is the toggler
+        if (
+          !navbarCollapse.contains(event.target) &&
+          !navbarToggler.contains(event.target)
+        ) {
+          // Collapse the menu
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+    </script>
+  <script src="polyfills-SCHOHYNV.js" type="module"></script><script src="scripts-EEEIPNC3.js" defer></script><script src="main-BN3WVUDJ.js" type="module"></script></body>
 </html>

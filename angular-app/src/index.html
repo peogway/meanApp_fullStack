@@ -18,5 +18,23 @@
   </head>
   <body>
     <app-root></app-root>
+    <script>
+      document.addEventListener("click", function (event) {
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarCollapse = document.querySelector("#navbarResponsive");
+
+        // Check if the clicked element is inside the navbar or is the toggler
+        if (
+          !navbarCollapse.contains(event.target) &&
+          !navbarToggler.contains(event.target)
+        ) {
+          // Collapse the menu
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+    </script>
   </body>
 </html>
