@@ -1,7 +1,7 @@
 The application has been deployed to Internet using Fly.io. Link to website:
 https://meanapp.fly.dev/
 
-Sometimes fly.io can be lagged. I also deploy the website by Onrender, you can try:
+Sometimes fly.io can be lagged. I also deploy the website by Render, you can try:
 https://meanapp-fullstack.onrender.com/
 
 The project uses angular/cli for the frontend, and express for backend. It can be easily set up: download the source code, extract it and run the command "npm i --force" in correct path. After installation, the application will be available with comand "npm run dev".
