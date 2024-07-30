@@ -5,7 +5,15 @@ const Task = require("../models/tasks");
 const config = require("../utils/config");
 
 // Authorization
-router.use(passport.authenticate("jwt", { session: false }));
+router.use((req, res, next) => {
+  passport.authenticate("jwt", { session: false }, (err, user, info) => {
+    if (err || !user) {
+      return res.redirect("/login");
+    }
+    req.user = user;
+    next();
+  })(req, res, next);
+});
 
 // Fetching All Tasks
 router.get(

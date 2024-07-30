@@ -68,6 +68,11 @@ router.get(
   "/profile",
   passport.authenticate("jwt", { session: false }),
   (req, res, next) => {
+    // If authentication fails, req.user will be undefined
+    if (!req.user) {
+      return res.redirect("/login");
+    }
+
     res.send({ user: req.user, success: true });
   },
 );
