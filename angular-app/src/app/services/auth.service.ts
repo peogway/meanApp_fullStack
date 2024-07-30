@@ -23,7 +23,7 @@ export class AuthService {
   authToken: any;
   user: any;
 
-  private apiUrl = 'http://localhost:3000/users';
+  private apiUrl = '/users';
   constructor(private http: HttpClient) {}
 
   addUser(user: User): Observable<AuthResponse> {

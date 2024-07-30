@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class TaskService {
   authToken: any;
-  private apiUrl = 'http://localhost:3000/dashboard';
+  private apiUrl = '/dashboard';
 
   constructor(private http: HttpClient) {}
 
