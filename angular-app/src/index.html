@@ -19,6 +19,29 @@
   <body>
     <app-root></app-root>
     <script>
+      function adjustFooterPosition() {
+        const footer = document.getElementById("footer");
+        if (!footer) return;
+        const contentHeight = document.body.scrollHeight;
+        const viewportHeight = window.innerHeight;
+
+        if (contentHeight > viewportHeight) {
+          footer.classList.add("relative-footer");
+        } else {
+          footer.classList.remove("relative-footer");
+        }
+      }
+
+      // Adjust on load and on resize
+      window.addEventListener("load", adjustFooterPosition);
+      window.addEventListener("resize", adjustFooterPosition);
+      window.addEventListener("load", adjustFooterPosition);
+      window.addEventListener("resize", adjustFooterPosition);
+
+      // Observe changes in the content
+      const observer = new MutationObserver(adjustFooterPosition);
+      observer.observe(document.body, { childList: true, subtree: true });
+
       document.addEventListener("click", function (event) {
         const navbarToggler = document.querySelector(".navbar-toggler");
         const navbarCollapse = document.querySelector("#navbarResponsive");

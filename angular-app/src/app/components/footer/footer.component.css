@@ -1,7 +1,7 @@
 footer {
   margin-top: 60px;
   text-align: center;
-  position: relative;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -14,4 +14,9 @@ a:hover {
   display: inline-block;
   transform: scale(1.2);
   transition: 0.5s ease-out;
+}
+
+.relative-footer {
+  position: relative;
+  bottom: auto;
 }
