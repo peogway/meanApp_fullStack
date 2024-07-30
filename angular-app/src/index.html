@@ -25,7 +25,7 @@
         const contentHeight = document.body.scrollHeight;
         const viewportHeight = window.innerHeight;
 
-        if (contentHeight > viewportHeight) {
+        if (contentHeight + 100 > viewportHeight) {
           footer.classList.add("relative-footer");
         } else {
           footer.classList.remove("relative-footer");
