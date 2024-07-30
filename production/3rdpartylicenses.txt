@@ -222,6 +222,11 @@ License: "MIT"
 
 
 --------------------------------------------------------------------------------
+Package: @angular/http
+License: "MIT"
+
+
+--------------------------------------------------------------------------------
 Package: rxjs-compat
 License: "Apache-2.0"
 
@@ -427,11 +432,6 @@ License: "Apache-2.0"
  See the License for the specific language governing permissions and
  limitations under the License.
  
-
---------------------------------------------------------------------------------
-Package: @angular/http
-License: "MIT"
-
 
 --------------------------------------------------------------------------------
 Package: angular2-jwt
